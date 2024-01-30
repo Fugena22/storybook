@@ -2,7 +2,14 @@
 
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Select, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function Home() {
   return (
@@ -16,8 +23,15 @@ export default function Home() {
 
       <Select>
         <SelectTrigger>
-          <SelectValue placeholder="Chọn đi" />
+          <SelectValue className="text-center" placeholder="Chọn đi" />
         </SelectTrigger>
+        <SelectContent>
+          <SelectGroup>
+            <SelectItem value="Male">Nam</SelectItem>
+            <SelectItem value="Female">Nữ</SelectItem>
+            <SelectItem value="Another">Khác</SelectItem>
+          </SelectGroup>
+        </SelectContent>
       </Select>
     </div>
   );
