@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import WaitlistForm from "@/components/ui/waitlist";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         Click me!!!
       </Button>
       <Avatar>
-        <AvatarImage src="https://www.likelion.edu.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdbscqlwl7%2Fimage%2Fupload%2Fv1692603569%2Flecturers%2FAnh_Phu%25CC%2581c_uuulxv.png&w=3840&q=75" />
+        <AvatarImage src="https://scontent.fhan3-3.fna.fbcdn.net/v/t1.6435-9/83643510_2536059313338044_8035517050673692672_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7a1959&_nc_ohc=LIAOm4vCJiAAX8ALQ6C&_nc_ht=scontent.fhan3-3.fna&oh=00_AfBnLL4-fvUMlZJSuNmDIkruyCqAWj2HcLoFW1QfjiJ3sg&oe=65DEDE10" />
       </Avatar>
 
       <Select>
@@ -33,6 +34,8 @@ export default function Home() {
           </SelectGroup>
         </SelectContent>
       </Select>
+
+      <WaitlistForm />
     </div>
   );
 }
